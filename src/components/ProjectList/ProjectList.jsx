@@ -3,9 +3,7 @@ import "./css/ProjectList.css";
 
 export default class ProjectList extends Component {
   render() {
-    const selectList = this.props.selectList;
-    // const selected = this.props.selected;
-    // const onSelectFilter = this.props.onSelectFilter;
+    const {selectList} = this.props;
 
     return (
       <div className="listView" >

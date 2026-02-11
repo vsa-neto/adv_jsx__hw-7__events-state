@@ -65,15 +65,14 @@ constructor(props) {
     this.state = {
         filters: ["All", "Websites", "Flayers", "Business Cards"],
         selected: "All",
-        // projects: _data,
         selectList: _data
     };
 };
 
 
 onSelectFilter = (e) => {
- let filter = e.target.getAttribute('name');
- let selectList = (filter === "All" ? _data : _data.filter(item => item.category === filter));
+const filter = e.target.getAttribute('name');
+const selectList = (filter === "All" ? _data : _data.filter(item => item.category === filter));
 
   this.setState({
     selected: filter,

@@ -3,9 +3,7 @@ import "./css/Toolbar.css";
 
 export default class Toolbar extends Component {
   render() {
-    const filters = this.props.filters;
-    const selected = this.props.selected;
-    const onSelectFilter = this.props.onSelectFilter;
+    const {filters, selected, onSelectFilter} = this.props;
 
     return (
       <div className="toolbar" onClick={onSelectFilter}>
